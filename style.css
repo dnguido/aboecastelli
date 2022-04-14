@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Source Code Pro', monospace;  
+*/
+
+.cabecera{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap:wrap;
+    
+}
+
+
+
+.cabecera__imagen {
+    width: 250px;
+    margin: 22px;
+    align-self:center;
+}
+.cabecera__navegacion__lista li {
+    font-style:italic;
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    margin: 22px;
+    
+    
+}
+
+
+.cabeceraNavegacion{
+    list-style: none;
+    margin: 15px;
+    padding: 5px;
+    
+
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+h1{
+    text-align:center;
+    color: #010101;
+    font-style: oblique;
+    font-family: 'Source Code Pro', monospace;  
+    
+}
+.parrafoP{
+    background-color: rgb(193, 192, 192);
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 25px 180px;
+}
+.textoResaltado{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+nav {
+    display: inline-block;
+    width: fit-content;
+}
+header{
+    background-color: rgb(180, 177, 177);
+    position:sticky;
+    top:0;
+    
+}
+
+.redsocial{
+    width: 50px;
+
+}
+
+.parrafoN{
+    font-size: 24px;
+    text-align:center;
+    font-size: 18px;
+    padding: 25px 180px;
+}
+
+.tituloN{
+    background-color: gray;
+    text-align: center;
+    text-decoration:solid;
+    font-size: 32px;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    font-style: oblique;
+
+}
+
+.textoNosotros{
+    background-color: rgb(208, 210, 212);
+}
+
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    align-content:flex-start;
+    
+}
+
+.galeria__fotos{
+    height: 250px;
+    margin: 28px;
+}
+
+.cardsFotos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-self:center;
+    list-style: none;
+    position: absolute;
+    bottom: 0;
+}
+
