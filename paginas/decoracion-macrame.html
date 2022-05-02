@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../img/logo2.png">
+    <script src="https://kit.fontawesome.com/6e3411cd14.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+
     <link rel="stylesheet" href="../style.css">
 
     <!-- Google Fonts -->
@@ -16,74 +20,100 @@
     <title>ABOE Castelli</title>
 </head>
 <body>
-    <header class="cabecera">
-        <a href="../index.html"> 
-            <img src="../img/logo2.png"  alt="Logo Aboe" class="cabecera__imagen"> 
-        </a> 
-         <nav class="cabecera_navegacion">
-             <ul class="cabecera__navegacion__lista">
-                 <li>
-                     <a href="../index.html" class="cabecera__lista__link active"> Inicio </a>
-                 </li>
-                 <li>
-                     <a href="./quienes-somos.html"> Quienes somos </a>
-                 </li>
-                 <li>
-                     <a href="./decoracion-macrame.html"> Decoracion Macrame </a>
-                 </li>
-                 <li>
-                     <a href="./impresion-3d.html"> Impresion 3D </a>
-                 </li>
-                 <li>
-                     <a href="./contacto.html"> Contacto </a>
-                 </li>
-             </ul>
-         </nav>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">
+                <img src="../img/logoaboe.png" alt="Logo" class="logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../paginas/impresion-3d.html">Impresion 3D</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../paginas/decoracion-macrame.html">Decoracion</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="../paginas/quienes-somos.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     
-    <main class="galeria"> 
-        <h2>Objetos de decoración</h2>
-        <div class="cardsFotos">
-            <img src="../img/cartera1.jpg" alt="Foto Cartera" class="galeria__fotos">
-            <h2>Cartera Bandolera</h2>
-       </div>
-       <div>
-            <img src="../img/espejomacrame.jpg" alt="Foto Espejo" class="galeria__fotos">
-            <h2>Espejo macramé</h2>
-       </div>
-       <div class="cardsFotos">
-            <img src="../img/canastayute.jpg" alt="Foto canasta yute" class="galeria__fotos">
-            <h2>Canasta de yute</h2>
-       </div>
-       <div class="cardsFotos">
-            <img src="../img/canastasmacrame.jpg" alt="Foto Canastas" class="galeria__fotos">
-            <h2>Canastas</h2>
-       </div>
+    
+    <main>
+        <section id="galeria" class="container">
+            <div class="text-center pt-5">
+                <h1>Decoración</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="../img/canastasmacrame.jpg" alt="Canasta macramé">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="../img/canastayute.jpg" alt="Canasta yute">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="../img/cartera1.jpg" alt="Cartera"> 
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="../img/espejomacrame.jpg" alt="Espejo macramé">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="../img/apoyataza.jpg" alt="Portavasos">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="../img/centrodemesa.jpg" alt="Centro de mesa">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <img src="../img/centrodemesav2.jpg" alt="Centro de mesa algodón">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <img src="../img/carterarafia.jpg" alt="Cartera de rafia">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <img src="../img/manta.jpg" alt="Manta">
+                </div>
 
+            </div>
+
+        </section>
     </main>
 
         
-        
-    <footer>
-        <p>Redes sociales</p>
-        <ul class="footer">
-            <li>
-                <a href="https://www.facebook.com/aboecastelli" target="_blank">
-                    <img src="../img/logofacebook.png" alt="Logo Facebook" class="redsocial">                   
-                </a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/aboe_castelli/?hl=es-la" target="_blank">
-                    <img src="../img/logoinstagram.png" alt="Logo Instagram" class="redsocial" >
-                </a>
-             </li>
-
-
-        </ul>
-
+    <footer class="container-fluid footer">
+      <div class="row">
+          <div class="col-lg-2 col-md-3 col-sm-12">
+              <img src="../img/logoaboe.png" alt="Logo" class="logo d-none d-md-block">
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 footer__logos">
+              <a href="https://www.facebook.com/aboecastelli"   target="_blank"  class="redes"><i class="fa-brands fa-facebook logos"></i></a>
+              <a href="https://www.instagram.com/aboe_castelli/"  target="_blank"  class="redes"><i class="fa-brands fa-instagram logos"></i></a>
+          </div>
+          <div class="col-lg-4 col-md-3 col-sm-12">
+              <div class="footer__contacto">
+                  <p>Teléfono: 2245513484</p>
+                  <p>Dirección: Sarmiento 232</p>
+              </div>
+          </div>
+      </div>
     </footer>
 
 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
     
 </body>
 </html>
