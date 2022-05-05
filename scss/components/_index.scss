@@ -1,0 +1,13 @@
+body{
+    background: linear-gradient(to right, rgb(39, 39, 39), rgb(80, 80, 80));
+}
+
+.indexContent h1{
+    color: $color-titulos;
+    font-size: $tamaño-titulos;
+
+}
+
+.indexContent p{
+    color: aliceblue;
+}

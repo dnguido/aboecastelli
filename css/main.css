@@ -1,0 +1,16 @@
+body {
+  background: linear-gradient(to right, #272727, #505050); }
+
+.indexContent h1 {
+  color: whitesmoke;
+  font-size: 28px; }
+
+.indexContent p {
+  color: aliceblue; }
+
+.header {
+  color: #222222; }
+
+.nav-link {
+  font-size: 24px;
+  color: whitesmoke; }
