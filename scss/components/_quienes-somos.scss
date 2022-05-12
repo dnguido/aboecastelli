@@ -1,0 +1,37 @@
+.mainContent p{
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 24px;
+    padding-left: 4px;
+}
+
+.quienesTitulo{
+    font-style: oblique;
+}
+
+
+
+.contactoNosotros h2{
+    display: flex;
+    justify-content: center !important;
+
+}
+
+.contactoNosotros a{
+    display: flex;
+    justify-content: center !important;
+
+}
+
+h2{
+    color: $color-titulos;
+}
+
+h3{
+    font-style: oblique;
+    color: $color-titulos;
+    margin-top: 50px;
+    text-align: center;
+}

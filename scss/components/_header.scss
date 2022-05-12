@@ -1,10 +1,13 @@
-.header{
-    color: $color-principal;
-
+nav{
+    background-color: $color-principal;
 }
 
 .nav-link{
     font-size: 24px;
-    color: whitesmoke;
+    color: whitesmoke !important;
 
+}
+
+.logo{
+    width: 240px;
 }

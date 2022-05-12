@@ -1,13 +1,19 @@
 body{
-    background: linear-gradient(to right, rgb(39, 39, 39), rgb(80, 80, 80));
+    margin: 0;
+    background-color: $color-secundario;
 }
 
 .indexContent h1{
-    color: $color-titulos;
-    font-size: $tamaño-titulos;
+
+    margin-top: 10px;
+    font-style: oblique;
+    color: whitesmoke;
+    text-align: center;
 
 }
 
-.indexContent p{
-    color: aliceblue;
+.h4{
+
+    color: rgb(250, 250, 250);
 }
+

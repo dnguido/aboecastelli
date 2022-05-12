@@ -1,0 +1,36 @@
+.logo{
+    width: 200px;
+}
+
+.footer{
+    background-color: $color-terciario;
+    width: 100%;
+    bottom: 0;
+    &__contacto{
+        border: solid 1px;
+        border-color: aliceblue;
+        border-radius: 6px;
+        margin-top: 10%;
+    }
+    &__logos{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    &__contacto p{
+        color: whitesmoke;
+        padding-left: 10px;
+        text-align: center;
+    }
+}
+
+.redes{
+    margin-top: 10%;
+    width: 10%;
+}
+
+.row img{
+    overflow: hidden;
+    border-radius: 20px;   
+    box-shadow: 5px 8px 12px black;
+    
+}
