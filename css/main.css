@@ -21,6 +21,10 @@ nav {
 .logo {
   width: 240px; }
 
+body {
+  min-height: 100vh;
+  position: relative; }
+
 .datos {
   width: 80%; }
 

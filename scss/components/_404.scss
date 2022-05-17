@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-image: linear-gradient(-255deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+}
+
+h1{
+    margin: 0;
+}
+
+.error-message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 100px);
+    width: 100%;
+    &__container{
+        text-align: center;
+        color: white;
+    }
+    h1{
+        font-size: 60px;
+    }
+    p{
+        font-size: 20px;
+    }
+}
+
+.animated{
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce{
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-30px);}
+    60% {transform: translateY(-15px);}
+}
+
+.bounce{
+    animation-name: bounce;
+}
+
+@media only screen and (max-width: 600px){
+
+}
+
+.boton{
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    background: #3584A7;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
