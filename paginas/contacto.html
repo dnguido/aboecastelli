@@ -12,11 +12,16 @@
     <link rel="icon" type="image/x-icon" href="../img/logo2.png">
     <title>Contacto</title>
 
+    <!-- ANIMATED CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand:wght@600&family=Source+Code+Pro&display=swap" rel="stylesheet">
+
 
 
 </head>
@@ -55,30 +60,58 @@
     
 
     <main>
-      <h2 class="contactoTitulo">Contacto</h2>
-      <p class="contactoP">Formulario de contacto</p>
-      <form class="form-floating">
-        <div class="input-group datos">
-          <span class="input-group-text">Nombre y apellido:</span>
-          <input type="text" aria-label="First name" class="form-control">
-          <input type="text" aria-label="Last name" class="form-control">
-        </div>
-        <input type="email" class="form-control contenedor" id="email" placeholder="name@example.com" value="test@example.com">
+        <div class="content">
+            <h1 class="tittle">Contactate con <span>nosotros</span></h1>
+            <div class="contact-wrapper">
+              <div class="contact-form">
+                <h3>Contacto</h3>
+                <form>
+                  <p>
+                      <label>Nombre y Apellido</label>
+                      <input type="text" name="nombrecompleto" class="nombrecompleto">
+                  </p>
+                  <p>
+                      <label>Email</label>
+                      <input type="email" name="email">
+                  </p>
+                  <p>
+                      <label>Teléfono</label>
+                      <input type="tel" name="telefono">
+                  </p>
+                  <p>
+                      <label>Asunto</label>
+                      <input type="text" name="asunto">
+                  </p>
+                  <p class="block">
+                      <label>Mensaje</label>
+                      <textarea name="mensaje" rows="3"></textarea>
+                  </p>
+                  <p class="block">
+                      <button type="enviar">
+                        Enviar
+                      </button>
+                  </p>
+                </form>
+                
+              </div>
+              <div class="contact-info">
+                  <h4>Más información</h4>
+                  <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> Sarmiento 232 </li>
+                    <li><i class="fa-solid fa-phone"></i> +54 2245 - 513484</li>
+                    <li><i class="fa-solid fa-envelope-open-text"></i> aboecastelli@gmail.com </li>
+                  </ul>
+                  <p>
+                      Contactate con nosotros y hacenos cualquier tipo de consulta que necesites. Estamos disponibles desde las 8hs hasta las 18hs.
+                  </p>
+                  <p>https://dnguido.github.io/denigris-idea/</p>
+              </div>
+            </div>
 
-        <div class="form-floating contenedor">
-          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-          <label for="floatingTextarea2">Mensaje</label>
+
+
+
         </div>
-        <select class="form-select contenedor" aria-label="Default select example">
-          <option selected>¿Qué productos te interesan?</option>
-          <option value="1">Mates personalizados 3D</option>
-          <option value="2">Decoración en macramé</option>
-          <option value="3">Decoración general</option>
-        </select>
-        <div class="col-12 contenedor">
-          <button class="btn btn-primary" type="submit">Enviar</button>
-        </div>
-      </form>
     </main>
     
     <footer class="container-fluid footer">

@@ -1,37 +1,55 @@
-.mainContent p{
-    color: aliceblue;
+.quienes h4{
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 20px;
-    font-size: 24px;
-    padding-left: 4px;
+    color: #fff;
+    font-size: 2vw;
 }
 
-.quienesTitulo{
-    font-style: oblique;
-}
-
-
-
-.contactoNosotros h2{
+.quienes h3{
     display: flex;
-    justify-content: center !important;
-
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    color: #fff;
+    font-size: 2vw;
 }
 
-.contactoNosotros a{
+.quienes p{
     display: flex;
-    justify-content: center !important;
-
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    color: #fff;
+    font-size: 1.5vw;
 }
 
-h2{
-    color: $color-titulos;
+
+.sabermas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #31384A;
+    margin-top: 20px;
+    color: #fff;
+    padding: 20px;
 }
 
-h3{
-    font-style: oblique;
-    color: $color-titulos;
-    margin-top: 50px;
-    text-align: center;
+@media (max-width: 800px){
+    .quienes h4{
+        font-size: 6vw;
+    }
+
+    .quienes h3{
+        font-size: 5vw;
+    }
+
+    .quienes p{
+        font-size: 3vw;
+    }
+
+    .sabermas{
+        
+    }
 }
