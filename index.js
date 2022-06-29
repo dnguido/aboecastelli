@@ -1,11 +1,5 @@
-function ConfirmDelete(){
-
-    let consulta = confirm ("Está seguro que desea continuar?")
-    
-    if (consulta == true){
-        return true;
-    }
-    else{
-        return false;
-    }
+for (let i = 0; i < 1; i++){
+    let nombre = prompt("Ingresa tu nombre");
+    let mensaje = (`Bienvenido ${nombre}`)
+    alert (mensaje)
 }
