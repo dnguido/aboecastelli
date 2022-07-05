@@ -1,11 +1,21 @@
-let usuario = prompt ("Ingrese un usuario")
+function calculadora (calculo, x, y) {
 
-while (usuario != "guido"){
-    alert ("Usuario incorrecto")
-    usuario = prompt ("Ingrese un usuario")
-}if (usuario === "guido"){
-    alert ("Bienvenido")
+    if (calculo == "suma"){
+        return x + y;
+    } else if (calculo == "resta"){
+        return x - y;
+    } else if (calculo == "multiplicacion"){
+        return x * y;
+    } else if (calculo == "division"){
+        return x / y;
+    } else if (calculo == "exponenciacion"){
+        return x ** y;
+    } else {
+        return -1
+    }
 }
+
+console.log(calculadora ("division", 4, 8))
 
 
 
