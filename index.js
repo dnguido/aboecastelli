@@ -15,7 +15,33 @@ function calculadora (calculo, x, y) {
     }
 }
 
-console.log(calculadora ("division", 4, 8))
+do{
+    let operacion = prompt("Ingrese una operacion: suma, resta, multiplicacion, division, exponenciacion");
+    let primero = parseInt(prompt ("Ingrese el primer numero"));
+    let segundo = parseInt(prompt ("Ingrese el segundo numero"));
+
+    if(operacion && primero && segundo && !isNaN(primero) && !isNan (segundo)){
+        alert (`El resultado de la operacion ${operacion} entre ${primero} y ${segundo} es: ${calculadora (operacion, primero, segundo)})`);
+
+        console.log(calculadora (operacion, primero, segundo));
+    }else{
+        alert ("Algunos de los datos ingresados no es válido");
+    }
+    
+}while(confirm ("Desea realizar otra operación?"))
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
