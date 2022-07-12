@@ -1,34 +1,32 @@
-function calculadora (calculo, x, y) {
-
-    if (calculo == "suma"){
-        return x + y;
-    } else if (calculo == "resta"){
-        return x - y;
-    } else if (calculo == "multiplicacion"){
-        return x * y;
-    } else if (calculo == "division"){
-        return x / y;
-    } else if (calculo == "exponenciacion"){
-        return x ** y;
-    } else {
-        return -1
+class Producto { 
+    constructor (nombre, precio){ 
+        this.nombre = nombre; 
+        this.precio = precio; 
+        this.vendido = false; 
+    } 
+    vender(){ 
+        this.vendido = true; 
+    } 
+} 
+ 
+let productos = []; 
+ 
+productos.push(new Producto ("mate 3d", 1000)); 
+productos.push(new Producto ("personaje 3d", 2000)); 
+productos.push(new Producto ("lampara 3d", 2500)); 
+productos.push(new Producto ("taza 3d", 1500)); 
+productos.push(new Producto ("tapiz macrame", 1200)); 
+productos.push(new Producto ("espejo macrame", 1800)); 
+ 
+for (const item of productos){ 
+    if (item.nombre == "lampara 3d"){ 
+        item.vender(); 
+    }else if(item.nombre == "taza 3d"){
+        item.vender();
     }
-}
 
-do{
-    let operacion = prompt("Ingrese una operacion: suma, resta, multiplicacion, division, exponenciacion");
-    let primero = parseInt(prompt ("Ingrese el primer numero"));
-    let segundo = parseInt(prompt ("Ingrese el segundo numero"));
-
-    if(operacion && primero && segundo && !isNaN(primero) && !isNan (segundo)){
-        alert (`El resultado de la operacion ${operacion} entre ${primero} y ${segundo} es: ${calculadora (operacion, primero, segundo)})`);
-
-        console.log(calculadora (operacion, primero, segundo));
-    }else{
-        alert ("Algunos de los datos ingresados no es válido");
-    }
-    
-}while(confirm ("Desea realizar otra operación?"))
+ }
+console.log(productos);
 
 
 
@@ -48,32 +46,5 @@ do{
 
 
 
-
-
-
-
-
-/* Practicando Switch
-let edad = prompt ("Cuál es tu edad")
-
-switch (edad){
-    case "0":
-        console.log ("Tenes cero años")
-        break;
-
-    case "10":
-        console.log ("Tenes 10 años")
-        break;
-
-    case "50":
-        console.log ("Tenes 50 años")
-        break;
-
-    default:
-        console.log("No tenes ni 0, ni 10, ni 50 años")
-        break;
-
-}
- */
 
 
