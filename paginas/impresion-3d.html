@@ -20,80 +20,27 @@
 
     <title>Impresión 3D</title>
 </head>
-<body>
-    <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html">
-                <img src="../img/logoaboe.png" alt="Logo" class="logo">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link aria-current="page" href="../index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="../paginas/impresion-3d.html">Impresion 3D</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../paginas/decoracion-macrame.html">Decoracion</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../paginas/quienes-somos.html">Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </header>
-    
-
-    <main>
-      <section id="impresion" class="container">
-        <div class="text-center pt-5">
-            <h1>Impresión 3D</h1>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="../img/matedeadpool.jpg" alt="Mate Deadpool">
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="../img/mateUnicornio.jpg" alt="Mate Unicornio">
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="../img/mateLOL.jpg" alt="Mate LOL Surprise"> 
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="../img/matespiderman.jpg" alt="Mate Spiderman">
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="../img/matevader.jpg" alt="Mate Darth Vader">
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="../img/matePikachu.jpg" alt="Mate Pikachu">
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <img src="../img/tazastitch.jpg" alt="Taza Stitch">
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <img src="../img/mateoso.jpg" alt="Mate oso polar">
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <img src="../img/mateosocomun.jpg" alt="Mate oso">
-            </div>
-
-        </div>
-      </section>
-
-    </main>
+<header>
+  <h1 id="titulo" class="titulo">Carrito de compras - Aboe 3D</h1>
+  <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
+</header>
 
 
+<main id="contenedor-productos">
+
+</main>
+
+<div class="modal-contenedor">
+  <div class="modal-carrito">
+      <h3>Carrito</h3>
+      <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+      <div id="carrito-contenedor">
+
+      </div>
+      <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+      <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
+  </div>
+</div>
     
     <footer class="container-fluid footer">
       <div class="row">
@@ -112,8 +59,8 @@
           </div>
       </div>
     </footer>
-
-
+    <script src="../modal.js"></script>
+    <script src="../index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
 </body>
 </html>
