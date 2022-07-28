@@ -1,14 +1,13 @@
-
 // Productos en stock //
 let stockProductos = [
     {id: 1, nombre: "Mate Thor", tipo: "mate", cantidad: 1, desc: "Mate de el Dios del Trueno", precio: 900, img: '../img/matethor.jpg'},
     {id: 2, nombre: "Mate Hogwarts", tipo: "mate", cantidad: 1, desc: "Mate de la escuela de magia", precio: 1400, img: '../img/hogwartsmate.jpg'},
     {id: 3, nombre: "Mate Minion", tipo: "mate", cantidad: 1, desc: "Mate de los Minions", precio: 900, img: '../img/mateminion.jpg'},
     {id: 4, nombre: "Mate Baby Yoda", tipo: "mate", cantidad: 1, desc: "Mate de Baby Yoda", precio: 950, img: '../img/mateyoda.jpg'},
-    {id: 5, nombre: "Taza Peppa", tipo: "taza", cantidad: 1, desc: "Taza de Peppa Pig para los más peques", precio: 1200, img: '../img/peppataza.jpg'},
+    {id: 5, nombre: "Taza Peppa", tipo: "taza", cantidad: 1, desc: "Taza de Peppa Pig", precio: 1200, img: '../img/peppataza.jpg'},
     {id: 6, nombre: "Taza Bob Esponja", tipo: "taza", cantidad: 1, desc: "Taza de Bob Esponja", precio: 1300, img: '../img/bobtaza.jpg'},
     {id: 7, nombre: "Taza Stitch", tipo: "taza", cantidad: 1, desc: "Taza del personaje Stitch", precio: 1400, img: '../img/tazastitch.jpg'},
-    {id: 8, nombre: "Taza Unicornio", tipo: "taza", cantidad: 1, desc: "Taza de Unicornio para los más peques", precio: 1000, img: '../img/mateUnicornio.jpg'},
+    {id: 8, nombre: "Taza Unicornio", tipo: "taza", cantidad: 1, desc: "Taza de Unicornio", precio: 1000, img: '../img/mateUnicornio.jpg'},
 ]
 
 
@@ -27,6 +26,13 @@ const precioTotal = document.getElementById('precioTotal')
 const cantidadTotal = document.getElementById('cantidadTotal')
 
 let carrito = []
+
+document.addEventListener ('DOMContentLoaded', () => {
+    if (localStorage.getItem('carrito')){
+        carrito = JSON.parse(localStorage.getItem('carrito'))
+        actualizarCarrito()
+    }
+})
 
 botonVaciar.addEventListener('click', () => {
     carrito.length = 0
@@ -109,6 +115,8 @@ const actualizarCarrito = () => {
 
         contenedorCarrito.appendChild(div)
 
+        localStorage.setItem ('carrito', JSON.stringify(carrito))
+
     })
 
     contadorCarrito.innerText = carrito.length // actualiza la longitud del carro
@@ -118,8 +126,6 @@ const actualizarCarrito = () => {
     //Por cada producto recorrido sumo con la propiedad precio arrancando en 0//
 
 }
-
-
 
 
 
